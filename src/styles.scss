@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+//estilos globales de la app
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    font-family:'';
+}
+
+:root{
+    --primary-color: #42409ae8;
+    --secondary-color: #42409ae8;
+    --accent-color: #F5EFFF;
+    --shadow-color: #F5EFFF; 
+}
+
+button.primary{
+    padding: 10px;
+    border: solid 1px var(--primary-color);
+    background: var(--primary-color);
+    color: #F5EFFF;
+    border-radius: 10px;
+
+}

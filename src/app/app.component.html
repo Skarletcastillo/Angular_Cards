@@ -1,6 +1,8 @@
 <main class="main">
-  <header class="brand-home">
-    <img class="bran-logo" src="../assets/img/Home.png" alt="">
+
+  <a routerLink="['/']">
+    <header class="brand-home">
+      <img class="bran-logo" src="../assets/img/Home.png" alt="">
 
     <section>
       <form>
@@ -8,11 +10,11 @@
         <button class="primary" type="button">Search</button>
       </form>
     </section>
-    
   </header>
+</a>
 
   <section class="content">
-    <app-home> </app-home>
+    <router-outlet/>
   </section>
 
 </main>

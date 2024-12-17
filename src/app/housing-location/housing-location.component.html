@@ -1,5 +1,15 @@
 <section class="listing">
-    <img [src]="housingLocation.photo" alt="Foto externa {{housingLocation.name}}" crossorigin class="liting-photo">
-    <h2 class="listing-heading">{{ housingLocation.name}}</h2>
-    <p class="listing-location">{{ housingLocation.city}}, {{housingLocation.state}}</p>
-</section>
+    <img
+      class="listing-photo"
+      [src]="housingLocation.photo" alt="Exterior photo of {{ housingLocation.name }}" />
+
+<div class="section_Title">
+      <h3 class="listing-heading">{{ housingLocation.name }}</h3>
+      <div class="section_subTitle">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"> <path fill="#42409a" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+        <p class="listing-location">{{ housingLocation.city }}, {{ housingLocation.state }}</p>
+      </div>
+</div>
+
+  </section>
+

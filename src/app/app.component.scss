@@ -4,4 +4,33 @@
 
 .brand-home{
     display: flex;   
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
 }
+
+.content{
+  margin: 0 auto;
+  width: 1140px;
+}
+
+
+input[type="text"] {
+    border: solid 2px var(--primary-color);
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 15px;
+    display: inline-block;
+    width: 300px;
+  }
+
+
+  button {
+    padding: 10px;
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+  }
+  

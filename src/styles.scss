@@ -3,18 +3,22 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:'Fuente';
 }
 
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-body{
-    font-family:'';
+
+@font-face {
+    font-family: 'Fuente';
+    src: url(../src/assets/fonts/Ubuntu/Ubuntu-Light.ttf);
 }
 
 :root{
     --primary-color: #42409ae8;
-    --secondary-color: #42409ae8;
+    --secondary-color: #E5D9F2;
+    --background-color: #F5EFFF;
     --accent-color: #F5EFFF;
     --shadow-color: #F5EFFF; 
 }

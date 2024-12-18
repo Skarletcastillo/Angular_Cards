@@ -32,11 +32,7 @@
     color: var(--primary-color);
   }
 
- 
 
-  .listing-location::before {
-    content: url("/assets/location-pin.svg") / "";
-  }
 
   section.listing a {
     padding-left: 20px;

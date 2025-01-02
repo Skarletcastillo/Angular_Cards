@@ -1,16 +1,53 @@
 <article class="section_details" >
     <img 
-     class="listing-photo" [src]="hosinglocation?.photo" alt="Image house" crossorigin>
+     class="listing_photo" [src]="hosinglocation?.photo" alt="Image house" crossorigin>
 
-     <section class="listing-description">
-        <h2 class="listing-heading">{{ hosinglocation?.name }}</h2>
-        <p class="listing-location">{{hosinglocation?.city}}, {{hosinglocation?.state}}</p>
+     <section class="listing_description">
+        <h2 class="listing_heading">{{ hosinglocation?.name }}</h2>
 
-        <h2 class="secttion-heading"> About this houting location:</h2>
+        <div class="sectionLocationHouse">
+        <img src="../../assets/icons/iconLocation.png" class="iconLocation" alt="">
+        <p>{{hosinglocation?.city}}, {{hosinglocation?.state}}</p>
+    </div>
+
+
+        <h2 class="secttion_heading"> Description</h2>
         <ul>
-            <li>units vailable:  {{ hosinglocation?.availableUnits}}</li>
-            <li>Does this location have wifi:  {{ hosinglocation?.wifi}}</li>
-            <li>Does this locationhave laundry:  {{ hosinglocation?.laundry}}</li>
+        <div class="sectionLocationHouse">
+            <img src="../../assets/icons/IconWifiPrueba.png" class="iconLocation" alt="">
+            <li> Units vailable:  {{ hosinglocation?.availableUnits}}</li>
+        </div>
+
+        <div class="sectionLocationHouse">
+            <img src="../../assets/icons/IconWifiPrueba.png" class="iconLocation" alt="">
+            <li> Have wifi:  {{ hosinglocation?.wifi}}</li>
+        </div>
+
+        <div class="sectionLocationHouse">
+            <img src="../../assets/icons/IconWifiPrueba.png" class="iconLocation" alt="">
+            <li> Laundry:  {{ hosinglocation?.laundry}}</li>
+        </div>
+
         </ul>
      </section>
+
 </article>
+
+<section class="Formulario">
+           
+<form [formGroup]="formAngular" (submit)="onsubmit()" class="listing_description">
+    <h2 class="listing_heading">Apply Now to live here</h2>
+
+    <label for="first_name">First name</label>
+    <input class="inputRegistro" id="first_name" type="text" formControlName="firstname">
+
+    <label for="last_name">Last name</label>
+    <input class="inputRegistro" id="last_name" type="text" formControlName="lastname">
+    
+    <label for="email">Email</label>
+    <input class="inputRegistro" id="email" type="email" formControlName="email">
+
+    <button type="submit" class="primary">Apply now</button>
+
+</form>
+</section>

@@ -2,13 +2,14 @@
   <img
     class="listing-photo"
     [src]="housingLocation.photo"
-    alt="Exterior photo of {{ housingLocation.name }}"
-  />
+    alt="Exterior photo of {{ housingLocation.name }}"/>
 
   <div class="section_Title">
     <h3 class="listing-heading">{{ housingLocation.name }}</h3>
     <div class="section_subTitle">
-      <icon-location-dot [style.width]="'13px'" color="#42409a"></icon-location-dot>
+    <img src="../../assets/icons/iconLocation.png" class="iconLocation" alt="">
+
+
       <p class="listing-location">
         {{ housingLocation.city }}, {{ housingLocation.state }}
       </p>
@@ -17,9 +18,7 @@
     <a
     [routerLink]="['/details', housingLocation.id]"
     routerLinkActive="router-link-active"
-    >Learn more</a
-  >
+    >Learn more</a>
     
     </div>
-  
 </section>

@@ -121,5 +121,11 @@ getHousingLocationById(id:number): Housinglocation | undefined {
   return this.housingLocationLits.find((housingLocation) => housingLocation.id == id); 
 }
 
+//enviar valores al formulario 
+submitApplication (firdsName:string, lastName:string, email:string){
+  console.log(`FirdsName: , ${firdsName} - lastName ${lastName} - Email ${email}`)
 }
+
+}
+
 
